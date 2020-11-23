@@ -14,7 +14,7 @@ import java.sql.SQLOutput;
 public class HomeController {
     @RequestMapping(value = "/")
     public String login () {
-        System.out.println("Login Page Requested");
+        System.out.println("Login Page Requested..");
         return "login";
     }
 
