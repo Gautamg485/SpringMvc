@@ -18,11 +18,11 @@ public class HomeController {
         return "login";
     }
 
-    @RequestMapping(value = "/user", method = RequestMethod.POST)
+    @RequestMapping(value = "/home", method = RequestMethod.POST)
     public String user (@Validated User user, Model model) {
         System.out.println("User Page Requested...");
         model.addAttribute("userName", user.getUserName());
-        return "user";
+        return "home";
     }
 
     @RequestMapping(value = "/test")
