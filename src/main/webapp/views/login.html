@@ -1,18 +1,54 @@
-<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{layout.html}">
+<!DOCTYPE html>
 <head>
+    <title>Login</title>
+    <link href="/resources/css/login.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/resources/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+
 </head>
 <body>
-<section layout:fragment="content">
-<div class="container text-center">
-<h1 class="txt-black">Welcome to Login Page</h1>
-<input type="button" class="btn btn-primary m-2 login" value="Login Text">
-<form action="home" method="post" class="form-inline">
-<input type="text" name="userName" class="form-control"/>
-<input type="submit" class="btn btn-primary m-2" value="Login">
-</form>
+<div class="main">
+    <div class="bg-layer">
+        <h1>Login form</h1>
+        <div class="header-main">
+            <div class="main-icon">
+                <span class="fa fa-eercast"></span>
+            </div>
+            <div class="header-left-bottom">
+                <form action="#" method="post">
+                    <div class="icon1">
+                        <span class="fa fa-user"></span>
+                        <input type="email" placeholder="Email Address" required=""/>
+                    </div>
+                    <div class="icon1">
+                        <span class="fa fa-lock"></span>
+                        <input type="password" placeholder="Password" required=""/>
+                    </div>
+                    <div class="login-check">
+                        <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i> Keep me logged in</label>
+                    </div>
+                    <div class="bottom">
+                        <button class="btn">Log In</button>
+                    </div>
+                    <div class="links">
+                        <p><a href="#">Forgot Password?</a></p>
+                        <p class="right"><a href="#">New User? Register</a></p>
+                        <div class="clear"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="social">
+                <ul>
+                    <li>or login using : </li>
+                    <li><a href="/user" class="facebook"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="/user" class="twitter"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="/user" class="google"><span class="fa fa-google-plus"></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
 </div>
-</section>
-</body>
 <script type="text/javascript" src='/resources/js/login.js'></script>
+</body>
 </html>
